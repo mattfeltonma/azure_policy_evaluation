@@ -103,7 +103,7 @@ def main():
                 policy_scan_result = requests.get(url=policy_scan.headers['Location'],headers=headers)
             if policy_scan_result.status_code == 200:
                 end = timer()
-                logging.info('Policy evaluation succeeded.  Evaluation took ' + str((end-start)/60) + ' minutes.'
+                logging.info('Policy evaluation succeeded.  Evaluation took ' + str((end-start)/60) + ' minutes.')
             
     except Exception as e:
         logging.error('Execution error',exc_info=True)

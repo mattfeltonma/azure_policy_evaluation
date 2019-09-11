@@ -21,5 +21,5 @@ This Python solution can be used to initiate an on-demand scan.  Be aware on-dem
 
 Ensure the appropriate Python modules are installed.
 
-python azure_policy_evaluate.py --tenantname <TENANTNAME> --clientid <CLIENTID> --subscriptionid <SUB_ID> [--logfile]
+python azure_policy_evaluate.py --tenantname TENANTNAME --clientid CLIENTID --subscriptionid SUB_ID [--logfile]
 

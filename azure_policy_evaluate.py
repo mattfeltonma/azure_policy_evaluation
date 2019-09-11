@@ -105,7 +105,7 @@ def main():
                 end = timer()
                 logging.info('Policy evaluation succeeded.  Evaluation took ' + str((end-start)/60) + ' minutes.')
             
-    except Exception as e:
+    except Exception:
         logging.error('Execution error',exc_info=True)
 
 if __name__ == "__main__":

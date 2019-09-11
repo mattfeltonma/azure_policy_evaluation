@@ -15,10 +15,11 @@ This Python solution can be used to initiate an on-demand scan.  Be aware on-dem
 ## Azure Requirements
 * [Azure Public Client Application](https://docs.microsoft.com/en-us/azure/healthcare-apis/register-public-azure-ad-client-app)
 * User account with Microsoft.PolicyInsights/policyStates/triggerEvaluation/action permisssion
+* Note that some tenants may restrict this action from a public application
 
 ## Setup
 
 Ensure the appropriate Python modules are installed.
 
-python azure-policy-evaluate.py --tenantname <TENANTNAME> --clientid <CLIENTID> --subscriptionid <SUB_ID> [--logfile]
+python azure_policy_evaluate.py --tenantname <TENANTNAME> --clientid <CLIENTID> --subscriptionid <SUB_ID> [--logfile]
 

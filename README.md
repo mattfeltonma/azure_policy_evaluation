@@ -15,7 +15,7 @@ This Python solution can be used to initiate an on-demand scan.  Be aware on-dem
 ## Azure Requirements
 * [Azure Public Client Application](https://docs.microsoft.com/en-us/azure/healthcare-apis/register-public-azure-ad-client-app)
 * User account with Microsoft.PolicyInsights/policyStates/triggerEvaluation/action permisssion
-* Note that some tenants may restrict this action from a public application
+* Note that some tenants may restrict this action from a public application and that may require modifying the acquire token function to use the confidential client flow along with granting the service prinicpal appropriate access to the subscription
 
 ## Setup
 

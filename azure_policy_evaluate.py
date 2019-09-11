@@ -46,7 +46,7 @@ def obtain_access_token(tenantname,scope,client_id):
         logging.error('Unable to generate user code')
         logging.error('Error was: %s',flow['error'])
         logging.error('Error description was: %s',flow['error_description'])
-        logging.errof('Error correlation_id was: %s',flow['correlation_id'])
+        logging.error('Error correlation_id was: %s',flow['correlation_id'])
         raise Exception('Unable to generate user code to initiate device flow')
     
     print(flow['message'])

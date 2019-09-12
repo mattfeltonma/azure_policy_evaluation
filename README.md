@@ -13,13 +13,12 @@ This Python solution can be used to initiate an on-demand scan.  Be aware on-dem
 * [MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-python)
 
 ## Azure Requirements
-* [Azure Public Client Application](https://docs.microsoft.com/en-us/azure/healthcare-apis/register-public-azure-ad-client-app)
-* User account with Microsoft.PolicyInsights/policyStates/triggerEvaluation/action permisssion
-* Note that some tenants may restrict this action from a public application and that may require modifying the acquire token function to use the confidential client flow along with granting the service prinicpal appropriate access to the subscription
+* [Application Registered with Azure AD as Confidential Client](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal)
+* Service principal must be granted Resource Policy Contributor Azure RBAC Role
 
 ## Setup
 
 Ensure the appropriate Python modules are installed.
 
-python azure_policy_evaluate.py --tenantname TENANTNAME --clientid CLIENTID --subscriptionid SUB_ID [--logfile]
+python azure_policy_evaluate.py --tenantname TENANTNAME --clientid CLIENTID --clientsecret CLIENTSECRET --subscriptionid SUB_ID [--logfile]
 
